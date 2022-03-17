@@ -56,7 +56,6 @@ function resetCards()
   }
   myLibrary = [];
 }
-
 function changeBook(e) {
   if (e.target.classList.contains("removeButton")) {
     let index = e.target.getAttribute('data-index');
