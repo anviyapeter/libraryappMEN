@@ -63,7 +63,8 @@ function changeBook(e) {
     container.removeChild(cardToRemove);
     myLibrary.splice(index,1);
   }
-  else if (e.target.classList.contains("readStatusBtn")) {
+  else if (e.target.classList.contains("readStatusBtn")) 
+  {
     let index = e.target.getAttribute('data-index');
     let cardToChange = document.querySelector(`[data-index="${index}"]`);
     let readStatus = cardToChange.querySelector('.isReadStatus');
