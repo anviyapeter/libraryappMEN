@@ -57,7 +57,8 @@ function resetCards()
   myLibrary = [];
 }
 function changeBook(e) {
-  if (e.target.classList.contains("removeButton")) {
+  if (e.target.classList.contains("removeButton")) 
+  {
     let index = e.target.getAttribute('data-index');
     let cardToRemove = document.querySelector(`[data-index="${index}"]`);
     container.removeChild(cardToRemove);
@@ -87,7 +88,8 @@ class Book
       author = "Unknown",
       pages = "0",
       isRead = "Not Read",
-    ) {
+    ) 
+    {
       this.title = title;
       this.author = author;
       this.pages = pages;

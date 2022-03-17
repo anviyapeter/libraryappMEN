@@ -31,8 +31,7 @@ const initBg = (autoplay = true) =.
      flex-grow: 1;
      text-align: center;
  }
- 
-#newBook, #resetBooks, #signup, #login 
+ #newBook, #resetBooks, #signup, #login 
 {
     flex-grow: 1;
     text-align: center;
