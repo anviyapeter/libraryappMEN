@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Library</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="csstyles.css">
+</head>
+
+
+<body>
+
+  <div class='bigcontainer'>
+
+    <div class='header'>
+      <h1 id='headerTitle'>Your Library</h1>
+      <div class='topButtons'>
+        <button type="button" id='newBook' onclick="openForm()">New Book</button>
+        <button type="button" id='signup' onclick="openForm()">Signup</button>
+        <button type="button" id='login' onclick="openForm()">Login</button>
+        <button type='button' id='resetBooks'>Reset
+          
+        <div class="form-popup" id="myForm">
+          <form  id='form' class="form-container">
+            <h1>New Book</h1>
+        
+            <label for="title"><b>Title</b></label>
+            <input id='formTitle' type="text" placeholder="Enter Title" name="title" required>
+        
+            <label for="author"><b>Author</b></label>
+            <input id='formAuthor' type="text" placeholder="Enter Author" name="author" required>
+        
+            <label for="pages"><b>Pages</b></label>
+            <input id='formPages' type="number" placeholder="Enter Number of Pages" name="pages" required>
+
+            <label for="isRead">Read?</label>
+            <input name='formRead' id='formIsRead' class="popup_radio" type='radio' value="Read" required>Read
+            <input name='formRead' id='formNotRead' class="popup_radio" type='radio' value="Not Read">Not Read
+            <button id='formSubmit' class="btn">
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="form-popup" id="myForm">
+            <form  id='form' class="form-container">
+            <h2>SignUp</h2>
+
+              <label for="email"><b>Email Id</b></label>
+             <input id='formemail' type="textElement" placeholder="Enter Email Id" name="email" required>
+
+             <label for="password"><b>Password</b></label>
+             <input id='formPassword' type="textElement" placeholder="Enter Password" name="password" required>
+
+             <button id='formSubmit' class="btn">
+              Submit
+             </button>
+            </form>
+        </div>
+        <div class="form-popup" id="myForm">
+            <form  id='form' class="form-container">
+              <h3>Login</h3>
+
+              <label for="username"><b>Username</b></label>
+             <input id='formUsername' type="text" placeholder="Enter Username" name="username" required>
+
+             <label for="password"><b>Password</b></label>
+             <input id='formPassword' type="textElement" placeholder="Enter Password" name="password" required>
+             <button id='formSubmit' class="btn">
+              Submit
+             </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class='container'>
+    </div>
+</div>
+
+  <script src="javascript.js" ></script>
+</body>
+</html>
