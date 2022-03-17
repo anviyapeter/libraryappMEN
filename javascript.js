@@ -48,7 +48,6 @@ function addBook(book)
   book.preventDefault();
   document.getElementById("form").reset();
 }
-
 function resetCards()
  {
   while(container.firstChild) 
